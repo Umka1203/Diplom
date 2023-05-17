@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+
+<div class="container container-home">
+    <form method="post" class="form-register container-home content">
+        <h2>Ссылки</h2>
+
+
+        {% csrf_token %}
+        <div>
+            <H3>Длинная ссылка:</H3>
+            {{ form.llink }}
+            <div id="str"></div><br><br>
+            <H3>Короткая ссылка:</H3>
+            {{ form.slink }}
+
+
+
+
+        </div>
+
+<!--        {% csrf_token %}-->
+<!--        {{ form.as_p }}-->
+
+        <button id="butt2" type="submit">Создать ссылку</button>
+
+    </form>
+</div>
+<br><br>
+
+<div class="form-register container-home content">
+
+    {% csrf_token %}
+    <h2>Доступные ссылки для {{user.username}}</h2>
+
+    <ul>
+    {% for el in links %}
+        {% if user.username == el.avtor %}
+            <a href="{{ el.llink }}"><li>Link/ {{ el.slink }} </li></a>
+        {% endif %}
+
+    {% endfor %}
+    </ul>
+
+
+</div>
+
+ <script>
+     function lengthFunction() {
+        var x = document.getElementById("id_llink").value.length;
+        document.getElementById("str").innerHTML = "Вы ввели " + x + " символов из 250";
+     }
+ </script>
+
+{% endblock %}

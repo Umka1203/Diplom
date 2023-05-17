@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: silver;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+a:hover {
+    color: #1f1f1f;
+}
+ .content {
+
+    text-align: center;
+
+ }
+ .container{
+    width: 1258px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-home {
+    width: 640px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: column;
+}
+
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+header .logo-pic {
+    float: left;
+    margin: 7px 7px 7px 0;
+   }
+
+header .logo-text {
+    align-items: center;
+    color: #222;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header nav a {
+    margin-left: 15px;
+}
+
+form {text-align:center;}
+
+.form-section {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0px 2px 4px 0px rgb(5 5 5 / 5%);
+}
+
+form label {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+form .helptext {
+    font-size: 13px;
+    display: block;
+    color: #5e5e5e;
+}
+
+form input {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 0;
+    background: red;
+    color: #fff;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+button:hover {transform: scale(1.2);}
+hr {margin: 10px 0;}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#butt {
+    width: 150px;
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 0;
+    background: red;
+    color: #fff;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+#butt:hover {transform: scale(1.2);}
+hr {margin: 10px 0;}
+
